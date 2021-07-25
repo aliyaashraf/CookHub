@@ -1,0 +1,5 @@
+<form #updaterecipe ="ngForm" (ngSubmit)="UpdateRecipe()">
+    <label>title</label>
+    <input type="text" name="title" [(ngModel)]= "recipeItem.title">
+    <input type="submit" [disabled]="updaterecipe.invalid" class="btnnewbook" value="Save">
+</form> 

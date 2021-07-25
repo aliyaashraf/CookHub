@@ -1,0 +1,9 @@
+<div style="padding-bottom: 25%;">
+    <form #addrecipe ="ngForm" (ngSubmit)="AddRecipe()">
+        <label>Dish name: </label><br><br>
+        <input type="text" name="title" [(ngModel)]= "recipeItem.title">
+        <button type="submit" >Add new recipe</button><br>
+    
+    </form> 
+</div>
+
